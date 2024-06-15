@@ -16,3 +16,60 @@ h1 span {
     color: #ff5563;
 }
 
+p {
+    font-size: 1.25rem;
+    margin-bottom: 4.5rem;
+}
+
+a {
+    background-color: #ff5563;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+
+a:hover {
+    background-color: #ff3e4e;
+}
+
+/*Big Image*/
+
+#bg-image {
+    position: absolute;
+    inset: 0;
+    background-image: url("https://images.pexels.com/photos/2098134/pexels-photo-2098134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/*Animation*/
+h1, p, a {
+    animation: apper 1s backwards;
+}
+
+h1 {
+    animation-delay: 0.2s;
+}
+
+p {
+    animation-delay: 1.6s;
+}
+
+@keyframes apper {
+    from {
+        opacity: 0;
+    }
+}
+
+/* Responsive */
+@media (width < 40rem) {
+    html {
+        font-size: 70%;
+    }
+}
